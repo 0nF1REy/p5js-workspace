@@ -1,46 +1,61 @@
-# Astro Starter Kit: Basics
+# p5.js - Workspace (Web)
 
-```sh
-npm create astro@latest -- --template basics
-```
+Landing page construída com Astro para selecionar ambientes de execução do p5.js.  
+A interface apresenta dois atalhos principais (STATIC e DYNAMIC) em um layout temático com estilos globais em SCSS.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ✨ O que este projeto faz
 
-## 🚀 Project Structure
+- Exibe uma tela inicial única para navegação rápida entre sketches p5.js.
+- Centraliza os links de navegação em uma camada de dados tipada.
+- Aplica identidade visual customizada com variáveis SCSS e fontes externas.
+- Mantém estrutura simples e focada em front-end estático.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🧱 Estrutura atual
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   └── Home.astro
+│   ├── data/
+│   │   └── links.ts
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── styles/
+│       └── _variables.scss
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Scripts
 
-## 🧞 Commands
+Execute os comandos na pasta `web`:
 
-All commands are run from the root of the project, from a terminal:
+| Comando                   | Descrição                                          |
+| :------------------------ | :------------------------------------------------- |
+| `npm install`             | Instala as dependências do projeto                 |
+| `npm run dev`             | Inicia o servidor local em `http://localhost:4321` |
+| `npm run build`           | Gera a versão de produção em `dist/`               |
+| `npm run preview`         | Sobe uma prévia local do build de produção         |
+| `npm run astro -- --help` | Exibe ajuda da CLI do Astro                        |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🎨 Stack
 
-## 👀 Want to learn more?
+- Astro
+- TypeScript
+- SCSS (`sass`)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📌 Observações
+
+- Os destinos dos botões (STATIC/DYNAMIC) são definidos em `src/data/links.ts`.
+- O tema global (cores e tokens) está em `src/styles/_variables.scss`.
+- O layout base e estilos globais ficam em `src/layouts/Layout.astro`.
+
+## 📚 Referência
+
+- Documentação oficial do Astro: https://docs.astro.build
