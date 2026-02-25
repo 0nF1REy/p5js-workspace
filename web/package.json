@@ -25,6 +25,7 @@
     "url": "https://github.com/0nF1REy"
   },
   "license": "MIT",
+  "homepage": "https://p5js-workspace.vercel.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/0nF1REy/p5js-workspace.git"
@@ -33,6 +34,7 @@
     "url": "https://github.com/0nF1REy/p5js-workspace/issues"
   },
   "dependencies": {
+    "@astrojs/vercel": "^9.0.4",
     "astro": "^5.17.1",
     "sass": "^1.97.3"
   }
